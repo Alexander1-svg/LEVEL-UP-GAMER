@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level-up_gamer - Login</title>
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+  </head>
+  <body class="bg-gradient-to-tl from-black to-stone-900 font-sans min-h-100vh">
+
+    <!-- HEADER -->
+    <header class="font-semibold">
+      <div class="flex items-center text-white bg-blue-950 px-4 py-2">
+        <div class="flex items-center flex-shrink-0 gap-4">
+          <img src="img\Adobe Express - file.png" alt="Level-up Gamer" class="h-18 w-26 mr-2" />
+        </div>
+        <nav class="flex gap-6 flex-1 justify-center text-white">
+          <a class="hover:scale-110 transform-transition" href="index.html">Inicio</a>
+          <a class="hover:scale-110 transform-transition" href="nosotros.html">Nosotros</a>
+          <a class="hover:scale-110 transform-transition" href="blog.html">Blogs</a>
+        </nav>
+        <div class="flex items-center flex-shrink-0 gap-4">
+          <button class="bg-sky-500 hover:bg-sky-700 text-white px-3 py-1 rounded hover:scale-110 transition-transform">
+            <a href="/Login.html">Iniciar sesión</a>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN LOGIN FORM -->
+    <main class="flex justify-center items-center mt-20">
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-8 w-96">
+        <h2 class="text-3xl mb-6 text-center font-bold">Iniciar Sesión</h2>
+        <form id="form-login" class="flex flex-col gap-4">
+          <div class="flex flex-col">
+            <label for="correo" class="mb-1">Correo</label>
+            <input type="email" id="correo" class="px-3 py-2 rounded text-black" placeholder="correo" required />
+          </div>
+          <div class="flex flex-col">
+            <label for="contrasena" class="mb-1">Contraseña</label>
+            <input type="password" id="contrasena" class="px-3 py-2 rounded text-black" placeholder="Contraseña" required />
+          </div>
+          <button type="submit" class="bg-lime-600 hover:bg-lime-700 px-3 py-2 rounded font-bold mt-4">Iniciar sesión</button>
+        </form>
+        <p class="text-center mt-4 text-gray-400">¿No tienes cuenta? <a href="registro.html" class="text-sky-400 hover:underline">Regístrate aquí</a></p>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-950 text-gray-200 py-8 mt-20">
+      <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex flex-col gap-2 text-center md:text-left">
+          <span class="font-bold text-lg">Contacto</span>
+          <span>Email: <a href="mailto:contacto@levelupgamer.com" class="text-sky-400 hover:underline">contacto@levelupgamer.com</a></span>
+          <span>Soporte: <a href="mailto:soporte@levelupgamer.com" class="text-sky-400 hover:underline">soporte@levelupgamer.com</a></span>
+          <span><img src="sprites/social.png" alt="WhatsApp Icon" class="inline-block w-4 h-4 mr-1"> <a href="https://wa.me/56912345678" target="_blank" class="text-green-400 hover:underline">+56 9 1234 5678</a></span>
+        </div>
+        <div class="text-center md:text-right mt-4 md:mt-0">
+          <span class="block">&copy; 2025 Level-up Gamer. Todos los derechos reservados.</span>
+        </div>
+      </div>
+    </footer>
+
+   <script src="js/script.js"></script>
+  </body>
+</html>

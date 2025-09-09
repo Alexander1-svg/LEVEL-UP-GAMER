@@ -63,5 +63,97 @@
         </div>
       </div>
     </header>
+    <!--  BLOGS/COMUNIDAD/GUIAS  -->
+    <main class="container mx-auto px-4 py-8 text-white">
+      <div class="flex items-center justify-between mb-4">
+        <h1 class="text-4xl font-bold text-center w-full md:w-auto">
+          Blogs Recientes
+        </h1>
+        <button
+          class="ml-auto bg-sky-500 hover:bg-sky-700 text-white px-4 py-2 rounded shadow transition-transform hover:scale-105 font-semibold flex items-center gap-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 4v16m8-8H4"
+            />
+          </svg>
+          Agregar blog
+        </button>
+      </div>
+      <div
+        class="grid grid-cols-1 gap-8 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-2 lg:grid-rows-2 w-200 justify-center"
+      >
+        <!-- Blog grande arriba -->
+        <article
+          class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow md:col-span-2 lg:col-span-2 flex flex-col md:flex-row lg:flex-row"
+        >
+          <img
+            src="img/blog1.jpg"
+            alt="Blog 1"
+            class="w-full md:w-1/2 h-64 object-cover md:h-auto lg:h-auto"
+          />
+          <div class="p-6 flex flex-col justify-center w-full">
+            <h2 class="text-3xl font-semibold mb-2">Título del Blog 1</h2>
+            <p class="text-gray-300 mb-4 text-lg">
+              Breve descripción del contenido del blog 1. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit.
+            </p>
+            <a
+              href="#"
+              class="text-sky-400 hover:underline font-semibold text-lg"
+              >Leer más...</a
+            >
+          </div>
+        </article>
+        <!-- Dos blogs pequeños abajo -->
+        <article
+          class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow flex flex-col"
+        >
+          <img
+            src="img/blog2.jpg"
+            alt="Blog 2"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-2xl font-semibold mb-2">Título del Blog 2</h2>
+            <p class="text-gray-300 mb-4">
+              Breve descripción del contenido del blog 2. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit.
+            </p>
+            <a href="#" class="text-sky-400 hover:underline font-semibold"
+              >Leer más...</a
+            >
+          </div>
+        </article>
+        <article
+          class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow flex flex-col"
+        >
+          <img
+            src="img/blog3.jpg"
+            alt="Blog 3"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h2 class="text-2xl font-semibold mb-2">Título del Blog 3</h2>
+            <p class="text-gray-300 mb-4">
+              Breve descripción del contenido del blog 3. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit.
+            </p>
+            <a href="#" class="text-sky-400 hover:underline font-semibold"
+              >Leer más...</a
+            >
+          </div>
+        </article>
+      </div>
+    </main>
   </body>
 </html>

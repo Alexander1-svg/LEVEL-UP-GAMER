@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="CSS/Style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="scripts/App.js"></script>
-  <script src="scripts/scriptcarrito.js"></script>
   </head>
   <body class="bg-black font-sans min-h-100vh">
     <!--  HEADER  -->
@@ -54,18 +53,18 @@
               </a>
             </nav>
           </button>
-          <!-- Login -->
+          <!-- LoginOut -->
+          <div class="mt-6 flex justify-end">
           <button
-            class="bg-sky-500 hover:bg-sky-700 text-white px-3 py-1 rounded hover:scale-110 transition-transform"
+            id="logoutBtn"
+            class="bg-red-600 hover:scale-106 transform transition text-white px-4 py-2 rounded font-bold"
           >
-            <nav>
-              <a href="/Login.html">Iniciar sesión</a>
-            </nav>
+            Cerrar sesión
           </button>
+        </div>
         </div>
       </div>
     </header>
-
     <!--  MAIN CONTENT -->
     <main>
         <!-- Anuncio principal -->
@@ -88,7 +87,7 @@
             <img
               src="img/Accesorios-y-Perifericos-Gaming-Esports.png"
               alt="Oferta Septiembre"
-              class="flex h-80 w-100 object-contain rounded"
+              class="flex-1/12 h-80 w-100 object-contain rounded"
             />
             <span
               class="absolute bottom-2 right-2 bg-blue-600 text-white font-bold px-3 py-1 rounded shadow-lg text-lg"
@@ -97,6 +96,14 @@
           </div>
         </div>
       </section>
+      <div class="flex flex-col items-center p-4 text-2xl bg-white mx-auto my-3 max-w-150 font-mono">
+          <h2>
+            <strong>20% de DESCUENTO a usuarios de DUOC UC</strong>
+            <p class=" text-center font-mono text-sm text-gray-800">
+              Descuento de usuario no aplicable con otras promociones
+            </p>
+          </h2>
+        </div>
       <!-- ============================================================================================================= -->
       <br />
   <hr class="text-gray-100 max-w-350 mx-auto my-3" />
@@ -123,12 +130,10 @@
                 RGB
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 159.990</span>
+                <span class="text-xl font-bold">CLP 127.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('1')"
                 >
-                  
                   Comprar
                 </button>
               </div>
@@ -136,7 +141,6 @@
           </div>
           <!-- Tarjeta de accesorio 2 -->
           <div
-            id="2"
             class="bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
             <img
@@ -150,10 +154,9 @@
                 Control inalámbrico DualSense para PS5
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 52.990</span>
+                <span class="text-xl font-bold">CLP 42.392</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('2')"
                 >
                   Comprar
                 </button>
@@ -175,10 +178,9 @@
                 Estuche protector para Nintendo Switch OLED
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 19.990</span>
+                <span class="text-xl font-bold">CLP 15.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('3')"
                 >
                   Comprar
                 </button>
@@ -213,12 +215,11 @@
                 / 1TB SSD
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 2.229.990</span>
+                <span class="text-xl font-bold">CLP 1.783.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('4')"
                 >
-                 Comprar
+                  Comprar
                 </button>
               </div>
             </div>
@@ -239,10 +240,9 @@
                 SSD / Pantalla 15,6" Full HD @144Hz
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 1.099.990</span>
+                <span class="text-xl font-bold">CLP 879.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('5')"
                 >
                   Comprar
                 </button>
@@ -264,10 +264,9 @@
                 Ryzen 5 8400f / NVIDIA GeForce RTX 4060 / 16GB RAM / 512GB SSD / refrigeración líquida / gabinete ATX
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 1.199.990</span>
+                <span class="text-xl font-bold">CLP 959.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('6')"
                 >
                   Comprar
                 </button>
@@ -297,10 +296,9 @@
               <h3 class="text-lg font-sans mb-2">PlayStation 5</h3>
               <p class="text-gray-400 mb-4">Consola PlayStation 5 Slim 825GB</p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 536.990</span>
+                <span class="text-xl font-bold">CLP 429.592</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('7')"
                 >
                   Comprar
                 </button>
@@ -320,10 +318,9 @@
               <h3 class="text-lg font-sans mb-2">Xbox Series S</h3>
               <p class="text-gray-400 mb-4">Consola Xbox Series S 512GB</p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 419.990</span>
+                <span class="text-xl font-bold">CLP 335.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('8')"
                 >
                   Comprar
                 </button>
@@ -345,10 +342,9 @@
                 Consola Nintendo Switch 2 / 256GB / 12 RAM / pantalla tactil
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 589.990</span>
+                <span class="text-xl font-bold">CLP 471.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('9')"
                 >
                   Comprar
                 </button>
@@ -380,10 +376,9 @@
                 Silla Gamer Trust GXT 707R Resto Negra y Roja
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 139.990</span>
+                <span class="text-xl font-bold">CLP 111.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('10')"
                 >
                   Comprar
                 </button>
@@ -405,10 +400,9 @@
                 Silla Gamer Kronos Hunter Pro Negra y Azul
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 119.990</span>
+                <span class="text-xl font-bold">CLP 95.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('11')"
                 >
                   Comprar
                 </button>
@@ -430,10 +424,9 @@
                 Silla Gamer Cougar Defensor Negra y Naranja
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 189.990</span>
+                <span class="text-xl font-bold">CLP 151.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('12')"
                 >
                   Comprar
                 </button>
@@ -465,10 +458,9 @@
                 Mouse Gamer Logitech G502 Hero
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 79.990</span>
+                <span class="text-xl font-bold">CLP 63.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('13')"
                 >
                   Comprar
                 </button>
@@ -490,10 +482,9 @@
                 Mouse Gamer Razer DeathAdder V2 Hyperspeed
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 89.990</span>
+                <span class="text-xl font-bold">CLP 71.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('14')"
                 >
                   Comprar
                 </button>
@@ -515,10 +506,9 @@
                 Teclado Gamer Logitech G413 Mechanical
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 99.990</span>
+                <span class="text-xl font-bold">CLP 79.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('15')"
                 >
                   Comprar
                 </button>
@@ -551,10 +541,9 @@
                 Mousepad Gamer HyperX Fury S Pro XL
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 29.990</span>
+                <span class="text-xl font-bold">CLP 23.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('16')"
                 >
                   Comprar
                 </button>
@@ -579,7 +568,6 @@
                 <span class="text-xl font-bold">CLP 29.990</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('17')"
                 >
                   Comprar
                 </button>
@@ -604,7 +592,6 @@
                 <span class="text-xl font-bold">CLP 29.990</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('18')"
                 >
                   Comprar
                 </button>
@@ -640,7 +627,6 @@
                 <span class="text-xl font-bold">CLP 19.990</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('19')"
                 >
                   Comprar
                 </button>
@@ -665,7 +651,6 @@
                 <span class="text-xl font-bold">CLP 19.990</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('20')"
                 >
                   Comprar
                 </button>
@@ -687,10 +672,9 @@
                 Poleron de Legend of Zelda Talla M/L/XL
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 39.990</span>
+                <span class="text-xl font-bold">CLP 31.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('21')"
                 >
                   Comprar
                 </button>
@@ -721,10 +705,9 @@
                 Juego de mesa Warhammer 40,000
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 89.990</span>
+                <span class="text-xl font-bold">CLP 71.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('22')"
                 >
                   Comprar
                 </button>
@@ -746,10 +729,9 @@
                 Juego de mesa Ajedrez
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 24.990</span>
+                <span class="text-xl font-bold">CLP 19.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('23')"
                 >
                   Comprar
                 </button>
@@ -771,10 +753,9 @@
                 Juego de mesa Japones Shogi
               </p>
               <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">CLP 59.990</span>
+                <span class="text-xl font-bold">CLP 47.992</span>
                 <button
                   class="bg-lime-600 hover:bg-lime-700 text-white px-3 py-1 rounded"
-                  onclick="agregarAlCarrito('24')"
                 >
                   Comprar
                 </button>
@@ -785,7 +766,7 @@
       </section>  
     </main>
     <!--  FOOTER SECTION  -->
-    <footer class="bg-blue-950 text-gray-200 py-8 mt-8">
+    <footer class="bg-blue-950 text-gray-200 py-8 mt-8" >
       <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
         <div class="flex flex-col gap-2 text-center md:text-left">
           <span class="font-bold text-lg">Contacto</span>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito - Level-up Gamer</title>
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gradient-to-tl from-black to-stone-900 font-sans min-h-100vh">
+    <!-- HEADER -->
+    <header class="font-semibold">
+      <div class="flex items-center text-white bg-blue-950 px-4 py-2">
+        <!-- Logo y Buscador -->
+        <div class="flex items-center flex-shrink-0 gap-4">
+          <button>
+            <nav>
+              <a href="index.html"
+                ><img
+                  src="img/Adobe Express - file.png"
+                  alt="Level-up Gamer"
+                  class="h-18 w-26 mr-2"
+              /></a>
+            </nav>
+          </button>
+          <div class="flex items-center h-12 w-64">
+            <div class="bg-stone-100 text-stone-700 rounded px-2 py-1 w-full">
+              <input
+                type="text"
+                placeholder="Buscar..."
+                class="bg-transparent outline-none w-full"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Navegación -->
+        <nav class="flex gap-6 flex-1 justify-center text-white">
+          <a class="hover:scale-110 transform-transition" href="index.html"
+            >Inicio</a
+          >
+          <a class="hover:scale-110 transform-transition" href="nosotros.html"
+            >Nosotros</a
+          >
+          <a class="hover:scale-110 transform-transition" href="blog.html"
+            >Blogs</a
+          >
+        </nav>
+        <!-- Login y carrito -->
+        <div class="flex items-center flex-shrink-0 gap-4">
+          <button class="relative hover:scale-120 transition-transform">
+            <nav>
+              <a href="carrito.html">
+                <img
+                  src="img/5465865.png"
+                  alt="Carrito de compras"
+                  class="size-9"
+                />
+              </a>
+            </nav>
+          </button>
+          <button
+            class="bg-sky-500 hover:bg-sky-700 text-white px-3 py-1 rounded hover:scale-110 transition-transform"
+          >
+            <nav>
+              <a href="/login.html">Iniciar sesión</a>
+            </nav>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="p-6 max-w-7xl mx-auto min-h-screen">
+      <h1 class="text-3xl text-white mb-6">Carrito de Compras</h1>
+
+      <ul id="lista-carrito" class="mb-4 space-y-4"></ul>
+
+      <p id="total-carrito" class="font-bold text-xl text-white mb-4">
+        Total: CLP 0
+      </p>
+
+      <button
+        id="pagar"
+        class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded"
+      >
+        Pagar
+      </button>
+    </main>
+    <!--  FOOTER SECTION  -->
+    <footer
+      class="bg-blue-950 text-gray-200 py-8 mt-8 absolute buttom-0 w-full"
+    >
+      <div
+        class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6"
+      >
+        <div class="flex flex-col gap-2 text-center md:text-left">
+          <span class="font-bold text-lg">Contacto</span>
+          <span
+            >Email:
+            <a
+              href="mailto:contacto@levelupgamer.com"
+              class="text-sky-400 hover:underline"
+              >contacto@levelupgamer.com</a
+            ></span
+          >
+          <span
+            >Soporte:
+            <a
+              href="mailto:soporte@levelupgamer.com"
+              class="text-sky-400 hover:underline"
+              >soporte@levelupgamer.com</a
+            ></span
+          >
+          <span
+            ><img
+              src="sprites/social.png"
+              alt="WhatsApp Icon"
+              class="inline-block w-4 h-4 mr-1"
+            />
+            <a
+              href="https://wa.me/56912345678"
+              target="_blank"
+              class="text-green-400 hover:underline"
+              >+56 9 1234 5678</a
+            ></span
+          >
+        </div>
+        <div class="text-center md:text-right mt-4 md:mt-0">
+          <span class="block"
+            >&copy; 2025 Level-up Gamer. Todos los derechos reservados.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scriptcarrito.js"></script>
+  </body>
+</html>

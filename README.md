@@ -6,3 +6,11 @@ videojuegos en Chile. Lanzada hace dos años como respuesta a la creciente deman
 pandemia, Leves-Up Gamer ofrece una amplia gama de productos para gamers, desde consolas y
 accesorios hasta computadores y sillas especializadas. Aunque no cuenta con una ubicación física,
 realiza despachos a todo el país.
+
+
+<img width="244" height="58" alt="image" src="https://github.com/user-attachments/assets/20889ea2-fda5-406f-9fbe-3fed2d654a2b" />
+
+
+Apartado CSS se utilizo el framework Tailwindcss el cual hace mas eficiente para diseño web, Tailwindcss te permite hacer tus propios componentes para 
+cosas que vayas a repetir constantemente.
+https://tailwindcss.com/docs/installation/using-vite

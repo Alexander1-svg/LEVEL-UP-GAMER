@@ -12,8 +12,7 @@
   <body class="bg-black font-sans min-h-100vh">
     <!--  HEADER  -->
     <header class="font-semibold">
-      <div class="flex items-center text-white bg-blue-950 px-4 py-2">
-        <!-- Logo y Buscador a la izquierda -->
+      <div class="flex items-center text-white bg-black px-4 py-2 box-shadow">
         <div class="flex items-center flex-shrink-0 gap-4">
           <button>
             <nav>
@@ -24,21 +23,16 @@
             /></a>
             </nav>
           </button>
-          <div class="flex items-center h-12 w-64">
-            <div class="bg-stone-100 text-stone-700 rounded px-2 py-1 w-full">
-              <input
-                type="text"
-                placeholder="Buscar..."
-                class="bg-transparent outline-none w-full"
-              />
-            </div>
-          </div>
         </div>
         <!-- Navegación centrada -->
         <nav class="flex gap-6 flex-1 justify-center text-white">
-          <a class="hover:scale-110 transform-transition" href="index.html">Inicio</a>
-          <a class="hover:scale-110 transform-transition" href="nosotros.html">Nosotros</a>
-          <a class="hover:scale-110 transform-transition" href="blog.html">Blogs</a>
+          <a class="hover:scale-110 transform-transition hover:text-sky-500" href="index.html">Inicio</a>
+          <p>/</p>
+          <p class="hover:scale-110 transform-transition hover:text-sky-500" href="index.html">Categorias</p>
+          <p>/</p>
+          <a class="hover:scale-110 transform-transition hover:text-sky-500" href="nosotros.html">Nosotros</a>
+          <p>/</p>
+          <a class="hover:scale-110 transform-transition hover:text-sky-500" href="blog.html">Blogs</a>
         </nav>
         <!-- Login y carrito -->
         <div class="flex items-center flex-shrink-0 gap-4">
@@ -70,30 +64,21 @@
     <main>
         <!-- Anuncio principal -->
         <div
-          class="flex items-center justify-center border-2 w-auto bg-gradient-to-t from-black via-lime-500 to-black"
+          class="flex items-center justify-center border-2 w-auto bg-gradient-to-t from-black via-sky-900 to-black"
         >
           <div class="flex flex-col items-center justify-center mr-8 px-10">
-            <p class="text-white text-6xl text-center mb-4">
-              Preparate para <br />
-              los lanzamientos de este <br />
+            <p class="text-white text-6xl text-center mb-4 font-mono">
+              Preparate para <br>
+              los lanzamientos de este
               2025
-            </p>
-            <p
-              class="text-white text-5xl text-center p-1 border-1 border-black/50 mb-4 bg-black rounded-lg w-120"
-            >
-              15% DE DESCUENTO
             </p>
           </div>
           <div class="relative">
             <img
-              src="img/Accesorios-y-Perifericos-Gaming-Esports.png"
+              src="img/p-pasta-disipadora_jpg.webp"
               alt="Oferta Septiembre"
-              class="flex h-80 w-100 object-contain rounded"
+              class="object-contain rounded border-l-3 border-black"
             />
-            <span
-              class="absolute bottom-2 right-2 bg-blue-600 text-white font-bold px-3 py-1 rounded shadow-lg text-lg"
-              >CLP 734.990</span
-            >
           </div>
         </div>
       </section>

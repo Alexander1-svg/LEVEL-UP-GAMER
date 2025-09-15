@@ -11,7 +11,7 @@
   >
     <!--  HEADER  -->
     <header class="font-semibold">
-      <div class="flex items-center text-white bg-blue-950 px-4 py-2">
+      <div class="flex items-center text-white bg-black px-4 py-2">
         <!-- Logo y Buscador  -->
         <div class="flex items-center flex-shrink-0 gap-4">
           <button>
@@ -24,25 +24,31 @@
               /></a>
             </nav>
           </button>
-          <div class="flex items-center h-12 w-64">
-            <div class="bg-stone-100 text-stone-700 rounded px-2 py-1 w-full">
-              <input
-                type="text"
-                placeholder="Buscar..."
-                class="bg-transparent outline-none w-full"
-              />
-            </div>
-          </div>
         </div>
         <!-- Navegación centrada -->
         <nav class="flex gap-6 flex-1 justify-center text-white">
-          <a class="hover:scale-110 transform-transition" href="index.html"
+          <a
+            class="hover:scale-110 transform-transition hover:text-sky-500"
+            href="index.html"
             >Inicio</a
           >
-          <a class="hover:scale-110 transform-transition" href="nosotros.html"
+          <p>/</p>
+          <p
+            class="hover:scale-110 transform-transition hover:text-sky-500"
+            href="index.html"
+          >
+            Categorias
+          </p>
+          <p>/</p>
+          <a
+            class="hover:scale-110 transform-transition hover:text-sky-500"
+            href="nosotros.html"
             >Nosotros</a
           >
-          <a class="hover:scale-110 transform-transition" href="blog.html"
+          <p>/</p>
+          <a
+            class="hover:scale-110 transform-transition hover:text-sky-500"
+            href="blog.html"
             >Blogs</a
           >
         </nav>
@@ -62,10 +68,10 @@
           </button>
           <!-- Login -->
           <button
-            class="bg-sky-500 hover:bg-sky-700 text-white px-3 py-1 rounded hover:scale-110 transition-transform"
+            class="bg-sky-500 hover:bg-sky-700 text-white px-3 py-1 rounded hover:scale-110 transition-transform sm:w-auto md:w-auto lg:w-auto sm:text-xs md:text-sm lg:text-base"
           >
             <nav>
-              <a href="/Login.html">Iniciar sesión</a>
+              <a href="/login.html">Iniciar sesión</a>
             </nav>
           </button>
         </div>
@@ -73,14 +79,14 @@
     </header>
     <!--  FORMULARIO  -->
     <div class="flex items-center justify-center min-h-screen">
-      <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+      <div
+        class="bg-slate-800 p-8 rounded-lg shadow-lg w-full max-w-md text-white"
+      >
         <h1 class="text-2xl font-bold mb-6 text-center">Registrar Usuario</h1>
         <form id="registre_login">
           <!--usuario-->
           <div class="mb-4">
-            <label
-              for="newUsuario"
-              class="block text-sm font-medium text-gray-700"
+            <label for="newUsuario" class="block text-sm font-medium"
               >Nombre de Usuario</label
             >
             <input
@@ -92,9 +98,7 @@
           </div>
           <!--contraseña-->
           <div class="mb-4">
-            <label
-              for="newContraseña"
-              class="block text-sm font-medium text-gray-700"
+            <label for="newContraseña" class="block text-sm font-medium"
               >Contraseña</label
             >
             <input
@@ -106,9 +110,7 @@
           </div>
           <!--email-->
           <div class="mb-4">
-            <label for="email" class="block text-sm font-medium text-gray-700"
-              >Email</label
-            >
+            <label for="email" class="block text-sm font-medium">Email</label>
             <input
               type="email"
               id="email"

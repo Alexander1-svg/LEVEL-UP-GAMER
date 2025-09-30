@@ -11,8 +11,8 @@
   </head>
   <body class="bg-black font-sans min-h-100vh">
     <!--  HEADER  -->
-    <header class="font-semibold w-auto md:w-auto lg:w-auto">
-      <div class="flex items-center text-white bg-black px-4 py-2 box-shadow w-auto md:w-auto lg:w-auto">
+    <header class="bg-black text-white font-semibold">
+      <div class="container mx-auto px-4 py-2 flex flex-col md:flex-row items-center justify-between gap-4">
         <div class="flex items-center flex-shrink-0 gap-4">
           <button>
             <nav>
@@ -48,7 +48,7 @@
           </button>
           <!-- Login -->
           <button
-            class="bg-sky-500 hover:bg-sky-700 text-white px-3 py-1 rounded hover:scale-110 transition-transform sm:w-auto md:w-auto lg:w-auto sm:text-xs md:text-sm lg:text-base"
+            class="bg-sky-500 hover:bg-sky-700 text-white px-3 py-1 rounded hover:scale-110 transition-transform"
           >
             <nav>
               <a href="/login.html">Iniciar sesión</a>
@@ -62,7 +62,7 @@
     <main>
         <!-- Anuncio principal -->
         <div
-          class="flex items-center justify-center border-2 w-auto bg-gradient-to-t from-black via-sky-900 to-black"
+          class="flex flex-col md:flex-row items-center justify-center border-2 w-auto bg-gradient-to-t from-black via-sky-900 to-black"
         >
           <div class="flex flex-col items-center justify-center mr-8 px-10">
             <p class="text-white text-6xl text-center mb-4 font-mono sm:text-4xl md:text-5xl lg:text-6xl">
@@ -79,7 +79,6 @@
             />
           </div>
         </div>
-      </section>
       <!-- ============================================================================================================= -->
       <br />
   <hr class="text-gray-100 max-w-350 mx-auto my-3" />

@@ -10,9 +10,8 @@
   </head>
   <body class="bg-black font-sans min-h-100vh">
     <!--  HEADER  -->
-    <header class="font-semibold">
-      <div class="flex items-center text-white bg-blue-950 px-4 py-2">
-        <!-- Logo y Buscador a la izquierda -->
+    <header class="bg-black text-white font-semibold">
+      <div class="container mx-auto px-4 py-2 flex flex-col md:flex-row items-center justify-between gap-4">
         <div class="flex items-center flex-shrink-0 gap-4">
           <button>
             <nav>
@@ -23,26 +22,19 @@
             /></a>
             </nav>
           </button>
-          <div class="flex items-center h-12 w-64">
-            <div class="bg-stone-100 text-stone-700 rounded px-2 py-1 w-full">
-              <input
-                type="text"
-                placeholder="Buscar..."
-                class="bg-transparent outline-none w-full"
-              />
-            </div>
-          </div>
         </div>
         <!-- Navegación centrada -->
         <nav class="flex gap-6 flex-1 justify-center text-white">
-          <a class="hover:scale-110 transform-transition" href="index.html">Inicio</a>
-          <a class="hover:scale-110 transform-transition" href="nosotros.html">Nosotros</a>
-          <a class="hover:scale-110 transform-transition" href="blog.html">Blogs</a>
+          <a class="hover:scale-110 transform-transition hover:text-sky-500" href="index.html">Inicio</a>
+          <p>/</p>
+          <a class="hover:scale-110 transform-transition hover:text-sky-500" href="nosotros.html">Nosotros</a>
+          <p>/</p>
+          <a class="hover:scale-110 transform-transition hover:text-sky-500" href="blog.html">Blogs</a>
         </nav>
         <!-- Login y carrito -->
         <div class="flex items-center flex-shrink-0 gap-4">
           <!-- Carrito -->
-          <button class="relative hover:scale-120 transition-transform">
+          <button class="relative hover:scale-120 transition-transform sm:w-auto md:w-auto lg:w-auto">
             <nav>
               <a href="carrito.html">
                 <img
@@ -54,55 +46,35 @@
             </nav>
           </button>
           <!-- LoginOut -->
-          <div class="mt-6 flex justify-end">
           <button
             id="logoutBtn"
-            class="bg-red-600 hover:scale-106 transform transition text-white px-4 py-2 rounded font-bold"
+            class="bg-red-600 hover:bg-red-800 text-white px-3 py-1 rounded hover:scale-110 transition-transform"
           >
             Cerrar sesión
           </button>
-        </div>
-        </div>
       </div>
     </header>
+
     <!--  MAIN CONTENT -->
     <main>
         <!-- Anuncio principal -->
         <div
-          class="flex items-center justify-center border-2 w-auto bg-gradient-to-t from-black via-lime-500 to-black"
+          class="flex flex-col md:flex-row items-center justify-center border-2 w-auto bg-gradient-to-t from-black via-sky-900 to-black"
         >
           <div class="flex flex-col items-center justify-center mr-8 px-10">
-            <p class="text-white text-6xl text-center mb-4">
-              Preparate para <br />
-              los lanzamientos de este <br />
+            <p class="text-white text-6xl text-center mb-4 font-mono sm:text-4xl md:text-5xl lg:text-6xl">
+              Preparate para <br>
+              los lanzamientos de este
               2025
-            </p>
-            <p
-              class="text-white text-5xl text-center p-1 border-1 border-black/50 mb-4 bg-black rounded-lg w-120"
-            >
-              15% DE DESCUENTO
             </p>
           </div>
           <div class="relative">
             <img
-              src="img/Accesorios-y-Perifericos-Gaming-Esports.png"
+              src="img/p-pasta-disipadora_jpg.webp"
               alt="Oferta Septiembre"
-              class="flex-1/12 h-80 w-100 object-contain rounded"
+              class="flex rounded border-l-3 border-black sm:item-bottom-0 md:item-bottom-0"
             />
-            <span
-              class="absolute bottom-2 right-2 bg-blue-600 text-white font-bold px-3 py-1 rounded shadow-lg text-lg"
-              >CLP 734.990</span
-            >
           </div>
-        </div>
-      </section>
-      <div class="flex flex-col items-center p-4 text-2xl bg-white mx-auto my-3 max-w-150 font-mono">
-          <h2>
-            <strong>20% de DESCUENTO a usuarios de DUOC UC</strong>
-            <p class=" text-center font-mono text-sm text-gray-800">
-              Descuento de usuario no aplicable con otras promociones
-            </p>
-          </h2>
         </div>
       <!-- ============================================================================================================= -->
       <br />
